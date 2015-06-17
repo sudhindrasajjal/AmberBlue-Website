@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>AmberBlue | Contact Us</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>   
+    <link rel="stylesheet" href="css/contact.css">
+
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+      <img src="images/logo.png"></a>
+      <h1>GET IN TOUCH<span> with AmberBlue</span></h1>
+      <p>Kindly Drop us a mail and we'll get in touch with you really soon!</p>
+    </header>
+    <form action="form-to-email.php">
+  <!--  General -->
+      <div class="form-group">
+        <h2 class="heading">Tell us something about you!</h2>
+        <div class="controls">
+          <input type="text" id="name" class="floatLabel" name="name">
+          <label for="name">Name</label>
+        </div>
+        <div class="controls">
+        <input type="text" id="company" class="floatLabel" name="company">
+        <label for="company">Company</label>
+        </div>
+      </div>
+    <!--  Details -->
+      <div class="form-group">
+        <h2 class="heading">Contact Details</h2>
+        <div class="controls">
+          <input type="tel" id="cell" class="floatLabel" name="cell">
+          <label for="cell">Phone Number</label>
+        </div>
+        <div class="controls">
+          <input type="email" id="email" class="floatLabel" name="email">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <!--  More -->
+      <div class="form-group">
+        <h2 class="heading">Your Queries</h2>
+        <div class="controls">
+          <textarea name="comments" class="floatLabel" id="comments"></textarea>
+          <label for="comments"></label>
+          <button>Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/gen_validatorv31.js"></script>  
+  </body>
+  
+
+</html>

