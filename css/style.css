@@ -3,7 +3,13 @@
 /*@import url(http://weloveiconfonts.com/api/?family=zocial);*/
 
 @font-face {
-    font-family: 'zocial', sans-serif;
+
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome-webfont.eot'), 
+         url('fonts/fontawesome-webfont.svg'),
+         url('fonts/fontawesome-webfont.ttf'); /* for CSS3 browsers */
+    font-weight: normal;
+    font-style: normal;
 }
 
 body, html{
@@ -418,7 +424,7 @@ img{
 }
 
 [data-icon]:before {
-    font-family: 'zocial';
+    font-family: 'FontAwesome';
     content: attr(data-icon);
     -webkit-font-smoothing: antialiased;
 }
