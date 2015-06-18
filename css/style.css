@@ -389,17 +389,17 @@ img{
 	font-size:17px;
 	padding:10px 40px;
 	text-decoration:none;
-	position: relative;
-	top: 600px;
-	left:50px;
-	z-index: 200;
+	position: absolute;
+	top: 60%;
+	left:10%;
+	z-index: 1000;
 }
 .myButton:hover {
 	background-color:transparent;
 	color: #d3d3d3;
 }
 .myButton:active {
-	position:relative;
+	position:absolute;
 	top:1px;
 }
 
